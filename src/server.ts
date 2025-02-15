@@ -13,7 +13,7 @@ import { getVerseQuery } from './getVerseQuery'
 
 
 type VerseCaughtResponse = {
-  "success": boolean,
+  "success": true,
   "version": string,
   "book": string,
   "chapter": number,
@@ -22,7 +22,7 @@ type VerseCaughtResponse = {
   "verses": { "verse": number, "quote": string }[],
 
 } | {
-  success: boolean
+  success: false
   message: string
 }
 
